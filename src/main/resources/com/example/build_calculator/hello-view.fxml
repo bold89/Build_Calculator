@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.build_calculator.HelloController">
+    <TextField fx:id="textField" prefHeight="62.0" prefWidth="300.0">
+        <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </VBox.margin>
+        <font>
+            <Font name="Arial Black" size="18.0"/>
+        </font>
+    </TextField>
+    <HBox alignment="BASELINE_CENTER" prefHeight="40.0" prefWidth="300.0">
+        <Button mnemonicParsing="false" onAction="#button7Clicked" text="7">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#button8Clicked" text="8">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#button9Clicked" text="9">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#divideAction" style="-fx-background-color: yellow;" text="/"
+                textAlignment="RIGHT">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+    </HBox>
+    <HBox alignment="BASELINE_CENTER" prefHeight="40.0" prefWidth="300.0">
+        <Button mnemonicParsing="false" onAction="#button4Clicked" text="4">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#button5Clicked" text="5">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#button6Clicked" text="6">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#minusAction" style="-fx-background-color: red;" text="-">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+    </HBox>
+    <HBox alignment="BASELINE_CENTER" layoutX="10.0" layoutY="152.0" prefHeight="40.0" prefWidth="300.0">
+        <Button mnemonicParsing="false" onAction="#button1Clicked" text="1">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#button2Clicked" text="2">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#button3Clicked" text="3">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#multiplicationAction" style="-fx-background-color: pink;" text="*">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+    </HBox>
+    <HBox alignment="BASELINE_CENTER" layoutX="10.0" layoutY="192.0" prefHeight="40.0" prefWidth="300.0">
+        <Button mnemonicParsing="false" onAction="#button0Clicked" text="0">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#calculate" style="-fx-background-color: cyan;" text="=">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#clearTextField" style="-fx-background-color: blue;" text="c"
+                textFill="#efebeb">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Button>
+        <Button layoutX="235.0" layoutY="20.0" mnemonicParsing="false" onAction="#addAction"
+                style="-fx-background-color: green;" text="+">
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+        </Button>
+    </HBox>
+
+</VBox>
